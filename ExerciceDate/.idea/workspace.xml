@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a2e72dd-e4bf-4f0b-96a9-5a4a15512817" name="Default Changelist" comment="" />
+    <list default="true" id="2c3c3601-e958-4112-bdeb-cba713e88904" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,14 +24,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="1TvCAnIoUDAiQMAHh486cCMYgJr" />
+  <component name="ProjectId" id="1TvFomuNL0vIHxzR2rswzk6D8QW" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="ToolWindowStructure.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ExerciceTraduction" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,7 +44,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="php" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8080">
+    <configuration name="php" type="PhpBuiltInWebServerConfigurationType" factoryName="PHP Built-in Web Server" document_root="$PROJECT_DIR$" port="8081">
       <method v="2" />
     </configuration>
   </component>
@@ -55,13 +53,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="5a2e72dd-e4bf-4f0b-96a9-5a4a15512817" name="Default Changelist" comment="" />
-      <created>1574331040615</created>
+      <changelist id="2c3c3601-e958-4112-bdeb-cba713e88904" name="Default Changelist" comment="" />
+      <created>1574332839390</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574331040615</updated>
-      <workItem from="1574331041846" duration="1796000" />
-      <workItem from="1574332970766" duration="438000" />
+      <updated>1574332839390</updated>
+      <workItem from="1574332840511" duration="553000" />
     </task>
     <servers />
   </component>
@@ -73,9 +70,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>

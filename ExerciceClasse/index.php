@@ -11,40 +11,12 @@
  * Auteur : Thomas Grossmann
  * Date : 28.11.2019
  */
+$i = 0;
+$tab = array("Fabien", "David", "Miguel", "Benoit", "Johnny", "Kevin", "Christopher", "Dmitri", "etc...");
 echo "<ul>";
-for ($i = 1; $i < 9; $i++){
-    switch ($i){
-        case 1:
-            echo "<li id=div$i>Fabien</li>";
-            break;
-        case 2:
-            echo "<li id=div$i>David</li>";
-            break;
-        case 3:
-            echo "<li id=div$i>Miguel</li>";
-            break;
-        case 4:
-            echo "<li id=div$i>Benoît</li>";
-            break;
-        case 5:
-            echo "<li id=div$i>Johnny</li>";
-            break;
-        case 6:
-            echo "<li id=div$i>Kevin</li>";
-            break;
-        case 7:
-            echo "<li id=div$i>Christopher</li>";
-            break;
-        case 8:
-            echo "<li id=div$i>Dmitri</li>";
-            break;
-        case 9:
-            echo "<li id=div$i>etc...</li>";
-            break;
-    }
+for ($i = 0; $i < 8; $i++){
+    echo "<li id=div$i>$tab[$i]</li>";
 }
-
-
 echo "</ul>";
  ?>
 </body>

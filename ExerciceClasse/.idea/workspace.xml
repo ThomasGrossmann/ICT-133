@@ -29,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Calendrier" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,7 +61,8 @@
       <workItem from="1574938140349" duration="1644000" />
       <workItem from="1575026137224" duration="1063000" />
       <workItem from="1575033588505" duration="1575000" />
-      <workItem from="1575541951630" duration="613000" />
+      <workItem from="1575541951630" duration="614000" />
+      <workItem from="1575636176405" duration="14000" />
     </task>
     <servers />
   </component>

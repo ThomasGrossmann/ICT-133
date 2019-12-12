@@ -16,8 +16,25 @@
 $monthQS = $_GET['month'];
 $yearQS = $_GET['year'];
 $dateTab = array("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su");
-$ts = time();
-$date = date("N", $ts);
+//$ts = date("Y-m-j", time());
+//$date = date("n", $ts);
+if (isset($_GET['ym'])) {
+    $ym = $_GET['ym'];
+} else {
+    $ym = date('Y-m');
+}
+$timestamp = strtotime($ym . '-01');
+if ($timestamp === false) {
+    $ym = date('Y-m');
+    $timestamp = strtotime($ym . '-01');
+}
+$today = date('Y-m-j', time());
+
+$timestamp = strtotime($ym . '-01');
+$prev = date('Y-m', strtotime('-1 month', $timestamp));
+$next = date('Y-m', strtotime('+1 month', $timestamp));
+$day_count = date('t', $timestamp);
+$str = date('w', $timestamp);
 
 switch ($monthQS){
     case 1:
@@ -64,12 +81,19 @@ for ($i = 0; $i < 7; $i++){
 }
 echo "</ul>";
 echo "<ul class='days'>";
-for ($a = 1; $a <= 31; $a++){
+echo "<li>$next</li>";
+for ($a = 1; $a <= $day_count; $str++){
+    $date = $ym . '-' . $a;
     echo "<li>";
-    if ($date == $a){
+    if ($date == $today){
         echo "<span class='active'>";
     }
     echo "$a</li>";
+    if ($str % 7 == 6 || $a == $day_count) {
+        if ($a == $day_count) {
+            echo "<li>$next</li>";
+        }
+    }
 }
 echo "</ul>";
 ?>

@@ -53,6 +53,7 @@ body {font-family: Verdana, sans-serif;}
     padding: 10px 0;
     background: #eee;
     margin: 0;
+    font-size: 40px;
 }
 
 .days li {
@@ -70,4 +71,9 @@ body {font-family: Verdana, sans-serif;}
     padding: 5px;
     background: #1abc9c;
     color: white !important
+}
+
+.nextprev{
+    font-size: 10px;
+    color: coral;
 }

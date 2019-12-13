@@ -16,25 +16,11 @@
 $monthQS = $_GET['month'];
 $yearQS = $_GET['year'];
 $dateTab = array("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su");
-//$ts = date("Y-m-j", time());
-//$date = date("n", $ts);
-if (isset($_GET['ym'])) {
-    $ym = $_GET['ym'];
-} else {
-    $ym = date('Y-m');
-}
-$timestamp = strtotime($ym . '-01');
-if ($timestamp === false) {
-    $ym = date('Y-m');
-    $timestamp = strtotime($ym . '-01');
-}
-$today = date('Y-m-j', time());
-
-$timestamp = strtotime($ym . '-01');
-$prev = date('Y-m', strtotime('-1 month', $timestamp));
-$next = date('Y-m', strtotime('+1 month', $timestamp));
-$day_count = date('t', $timestamp);
-$str = date('w', $timestamp);
+$ts = time();
+$date = date("n", $ts);
+$timestamp = $date % 7;
+$prev = $timestamp + $date;
+$next = $timestamp - $date +8;
 
 switch ($monthQS){
     case 1:
@@ -81,18 +67,21 @@ for ($i = 0; $i < 7; $i++){
 }
 echo "</ul>";
 echo "<ul class='days'>";
-echo "<li>$next</li>";
-for ($a = 1; $a <= $day_count; $str++){
-    $date = $ym . '-' . $a;
+for ($i = 0; $i < $timestamp+1; $i++){
+    echo "<li><span class='nextprev'>$prev</li>";
+    $prev++;
+}
+for ($a = 1; $a <= 31; $a++){
     echo "<li>";
-    if ($date == $today){
+    if ($date == $a-1){
         echo "<span class='active'>";
     }
     echo "$a</li>";
-    if ($str % 7 == 6 || $a == $day_count) {
-        if ($a == $day_count) {
-            echo "<li>$next</li>";
-        }
+}
+if ($date % 7 < 7){
+    for ($i = 0; $i < $timestamp; $i++){
+        echo "<li><span class='nextprev'>$next</li>";
+        $next++;
     }
 }
 echo "</ul>";

@@ -73,7 +73,8 @@ body {font-family: Verdana, sans-serif;}
     color: white !important
 }
 
-.nextprev{
-    font-size: 10px;
-    color: coral;
+.prevnext {
+    padding: 5px;
+    background: #aaacab;
+    color: #dddddd !important
 }

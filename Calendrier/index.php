@@ -12,7 +12,6 @@
  * Auteur : Thomas Grossmann
  * Date : 05.12.2019
  */
-//$months = array("", "Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre");
 $monthQS = $_GET['month'];
 $yearQS = $_GET['year'];
 $dateTab = array("Mo", "Tu", "We", "Th", "Fr", "Sa", "Su");
@@ -60,7 +59,6 @@ switch ($monthQS){
         echo "<div class='month'><ul><li>Décembre<br>$yearQS</li></ul></div>";
         break;
 }
-//echo "<div class='month'><ul><li>$months[$monthQS]<br>$yearQS</li></ul></div>";
 echo "<ul class='weekdays'>";
 for ($i = 0; $i < 7; $i++){
     echo "<li>$dateTab[$i]</li>";
@@ -68,7 +66,7 @@ for ($i = 0; $i < 7; $i++){
 echo "</ul>";
 echo "<ul class='days'>";
 for ($i = 0; $i < $timestamp+1; $i++){
-    echo "<li><span class='nextprev'>$prev</li>";
+    echo "<li><span class='prevnext'>$prev</li>";
     $prev++;
 }
 for ($a = 1; $a <= 31; $a++){
@@ -78,11 +76,9 @@ for ($a = 1; $a <= 31; $a++){
     }
     echo "$a</li>";
 }
-if ($date % 7 < 7){
-    for ($i = 0; $i < $timestamp; $i++){
-        echo "<li><span class='nextprev'>$next</li>";
-        $next++;
-    }
+for ($i = 0; $i < $timestamp; $i++) {
+    echo "<li><span class='prevnext'>$next</li>";
+    $next++;
 }
 echo "</ul>";
 ?>

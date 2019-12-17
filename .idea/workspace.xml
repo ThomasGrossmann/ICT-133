@@ -13,12 +13,16 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ICT-133" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1TvBr1UgGAUzkrHJo0jcBpnRbpK" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -43,6 +47,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574330883600</updated>
       <workItem from="1574330885701" duration="155000" />
+      <workItem from="1576611070050" duration="6242000" />
     </task>
     <servers />
   </component>
@@ -54,7 +59,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
